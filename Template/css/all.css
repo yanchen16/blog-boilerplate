@@ -1,3 +1,166 @@
+@charset "UTF-8";
+/*原本校長範例，可以刪掉*/
+/*
+$primary: #0027D5;
+
+$black: #000;
+
+$text-color: $black;
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*原本校長範例，可以刪掉*/
+/*
+body{
+    color: $text-color;
+}
+
+.header{
+
+}
+.footer{
+
+}
+
+.container{
+    max-width: 1296px ;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+*/
 html {
   scroll-behavior: smooth;
 }
@@ -11,7 +174,7 @@ body {
 }
 
 .navbar {
-  background: white;
+  background: #f8eaea;
   padding: 1rem 2rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   position: sticky;
@@ -42,11 +205,11 @@ body {
   color: #f39c12;
 }
 .navbar .nav-links.active {
+  background: #ffffff;
   display: block;
   position: absolute;
   top: 70px;
   left: 0;
-  background: white;
   width: 100%;
   text-align: center;
   padding: 1rem 0;
@@ -120,7 +283,7 @@ section h2 {
   gap: 1.5rem;
   justify-content: center;
   flex-wrap: wrap;
-  background: #fff;
+  background: #ffffff;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   padding: 2rem 1.5rem;
@@ -130,7 +293,7 @@ section h2 {
 .education .edu-img {
   width: 64px;
   height: 64px;
-  background: #fff;
+  background: #ffffff;
   border-radius: 50%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   padding: 10px;
@@ -147,12 +310,12 @@ section h2 {
   margin-bottom: 0.2rem;
 }
 .education .edu-info .edu-degree .edu-school {
-  color: #222;
+  color: #222222;
   font-weight: normal;
   font-size: 1rem;
 }
 .education .edu-info .edu-date {
-  color: #888;
+  color: #888888;
   margin-bottom: 0.5rem;
   font-size: 0.95rem;
 }
@@ -177,7 +340,7 @@ section h2 {
   top: 0;
   width: 4px;
   height: 100%;
-  background: linear-gradient(to bottom, #f9a825 0%, #fff 100%);
+  background: linear-gradient(to bottom, #f9a825 0%, #ffffff 100%);
   transform: translateX(-50%);
   z-index: 0;
   border-radius: 2px;
@@ -232,7 +395,7 @@ section h2 {
   top: 2.2rem;
   width: 1.3rem;
   height: 1.3rem;
-  background: #fff;
+  background: #ffffff;
   border: 4px solid #f9a825;
   border-radius: 50%;
   z-index: 2;
@@ -240,7 +403,7 @@ section h2 {
   transition: background 0.2s, border 0.2s;
 }
 .timeline .timeline-content {
-  background: #fff;
+  background: #ffffff;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
   padding: 1.2rem 2rem;
@@ -254,7 +417,7 @@ section h2 {
   transform: translateY(-4px) scale(1.03);
 }
 .timeline .timeline-content .timeline-date {
-  color: #888;
+  color: #888888;
   font-size: 1rem;
   margin-bottom: 0.5rem;
   font-weight: 500;
@@ -269,7 +432,7 @@ section h2 {
   letter-spacing: 1px;
 }
 .timeline .timeline-content .timeline-desc {
-  color: #444;
+  color: #444444;
   font-size: 1rem;
   line-height: 1.8;
   margin-top: 0.5rem;
@@ -279,8 +442,6 @@ section h2 {
 
 .skills-icons .skill-icon:hover {
   filter: drop-shadow(0 0 8px #00bcd4);
-  transform: scale(1.1);
-  transition: 0.2s;
 }
 
 .skills-table {
@@ -341,7 +502,7 @@ section h2 {
 }
 
 .skills-row span:not(.skills-title) {
-  color: #333;
+  color: #333333;
   z-index: 1;
   position: relative;
   letter-spacing: 0.5px;
@@ -355,7 +516,7 @@ section h2 {
   gap: 2rem;
 }
 .portfolio .grid .card {
-  background: white;
+  background: #ffffff;
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -385,13 +546,13 @@ section h2 {
 }
 .contact form input, .contact form textarea {
   padding: 0.75rem;
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   border-radius: 4px;
   font-size: 1rem;
 }
 .contact form button {
   background: #f39c12;
-  color: white;
+  color: #ffffff;
   padding: 0.75rem;
   border: none;
   border-radius: 4px;
@@ -405,14 +566,15 @@ section h2 {
 footer {
   text-align: center;
   padding: 1rem;
-  background: #222;
-  color: #fff;
+  background: #222222;
+  color: #ffffff;
 }
 
 @media (max-width: 768px) {
   .nav-links {
     display: none;
     flex-direction: column;
+    background: #ffffff;
   }
   .hamburger {
     display: block;
@@ -505,4 +667,4 @@ footer {
   100% {
     transform: translateY(-18px);
   }
-}/*# sourceMappingURL=style.css.map */
+}

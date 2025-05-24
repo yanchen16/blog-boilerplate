@@ -1,0 +1,30 @@
+/*原本校長範例，可以刪掉*/
+/*
+body{
+    color: $text-color;
+}
+
+.header{
+
+}
+.footer{
+
+}
+
+.container{
+    max-width: 1296px ;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  line-height: 1.6;
+  color: $primary-color;
+  scroll-behavior: smooth;
+}
