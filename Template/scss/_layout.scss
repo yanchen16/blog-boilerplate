@@ -17,14 +17,16 @@ body{
     padding: 0 15px;
 }
 */
-html {
-  scroll-behavior: smooth;
-}
 
 body {
   margin: 0;
   font-family: 'Helvetica Neue', sans-serif;
   line-height: 1.6;
   color: $primary-color;
-  scroll-behavior: smooth;
+  opacity: 0; /* 初始狀態透明，為淡入做準備 */
+  transition: opacity 0.3s ease-in-out; /* 設定透明度變化的過渡效果，持續0.3秒 */
+}
+
+body.loaded { /* 當此 class 加入到 body 時，觸發淡入 */
+  opacity: 1;
 }
