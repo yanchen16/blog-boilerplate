@@ -1,3 +1,5 @@
+/*原本校長範例，可以刪掉*/
+/*
 body{
     color: $text-color;
 }
@@ -13,4 +15,18 @@ body{
     max-width: 1296px ;
     margin: 0 auto;
     padding: 0 15px;
+}
+*/
+
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  line-height: 1.6;
+  color: $primary-color;
+  opacity: 0; /* 初始狀態透明，為淡入做準備 */
+  transition: opacity 0.3s ease-in-out; /* 設定透明度變化的過渡效果，持續0.3秒 */
+}
+
+body.loaded { /* 當此 class 加入到 body 時，觸發淡入 */
+  opacity: 1;
 }

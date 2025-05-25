@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>關於小精靈</title>
+  <title>聯絡我 - 小精靈</title>
   <link rel="stylesheet" href="css/all.css" />
 </head>
 <body>
@@ -21,14 +21,16 @@
       <div class="hamburger" id="hamburger">&#9776;</div>
     </div>
   </nav>
-  <header class="hero">
-    <div class="overlay"></div>
-    <div class="content">
-      <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&w=160&h=160&fit=crop" alt="人像照片" style="width:120px;height:120px;border-radius:50%;object-fit:cover;box-shadow:0 2px 8px rgba(0,0,0,0.15);margin-bottom:1rem;">
-      <h1>您好，我是 小精靈</h1>
-      <p>網頁設計師 & 全端開發者</p>
-    </div>
-  </header>
+
+  <section class="contact" id="contact">
+    <h2>聯絡我</h2>
+    <form>
+      <input type="text" placeholder="您的姓名" required>
+      <input type="email" placeholder="電子郵件" required>
+      <textarea placeholder="您的訊息" rows="5" required></textarea>
+      <button type="submit">送出</button>
+    </form>
+  </section>
 
   <footer>
     <p>© 2025 小精靈. All rights reserved.</p>

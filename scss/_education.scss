@@ -1,0 +1,51 @@
+// Education
+.education {
+  .edu-card {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 2rem 1.5rem;
+    margin: 0 auto 2rem auto;
+    max-width: 600px;
+  }
+  .edu-img {
+    width: 64px;
+    height: 64px;
+    background: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 10px;
+    object-fit: contain;
+  }
+  .edu-info {
+    text-align: left;
+    .edu-degree {
+      font-size: 1.2rem;
+      color: #f39c12;
+      font-weight: bold;
+      margin-bottom: 0.2rem;
+      .edu-school {
+        color: #222222;
+        font-weight: normal;
+        font-size: 1rem;
+      }
+    }
+    .edu-date {
+      color: #888888;
+      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
+    }
+    .edu-detail {
+      margin-bottom: 0.2rem;
+      .edu-label {
+        color: #4078c0;
+        font-weight: bold;
+      }
+    }
+  }
+}
